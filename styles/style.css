@@ -35,7 +35,7 @@
   inset-block-start: 10px;
   font-weight: var(--min-font-weight);
   line-height: 25px;
-  color: var(--accent-color);
+  color: var(--pseudo-color);
 }
 
 .head-decor-text::after {
@@ -46,9 +46,9 @@
   display: block;
   inline-size: 9px;
   block-size: 9px;
-  background-color: var(--accent-color);
+  background-color: var(--pseudo-color);
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--pseudo-color);
 }
 
 .decorated-zone:before {
