@@ -9,4 +9,26 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: url("../images/cover-image-light.png");
+  --color-title-head: #FFC2E6;
+  --accent-color-bg: #FF8DCB;
+  --accent-color: #353430;
+  --color-text: #353430;
+  --hover-button-color: rgb(50 49 45 / 0.4);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --bg-color: url("../images/cover-image-light.png");
+  --color-title-head: #FFC2E6;
+  --accent-color-bg: #FF8DCB;
+  --color-text: #353430;
+  --hover-button-color: rgb(50 49 45 / 0.4);
+  --accent-color: #353430;
+
+  }
+}
+
+.head-decor-text::before, .head-decor-text::after {
+  display: none;
 }
