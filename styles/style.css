@@ -217,6 +217,11 @@
   outline: 1px solid currentColor;
 }
 
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--hover-button-color)
+}
+
 @media (width >= 768px) {
   .page {
     padding: 10px 20px 10px 0;
