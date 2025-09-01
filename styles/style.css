@@ -14,12 +14,13 @@
   font-size: var(--font-size);
   line-height: 23.4px;
   padding: 0 10px;
+  margin: 0;
 }
 
 .header {
   display: grid;
   grid-template-rows: min-content 1fr 2fr;
-  block-size: fit-content;
+  block-size: 100vh;
   min-block-size: var(--min-block);
   position: relative;
   padding-block-start: 10px;
