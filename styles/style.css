@@ -20,10 +20,11 @@
 .header {
   display: grid;
   grid-template-rows: min-content 1fr 2fr;
+  gap: 8px;
   block-size: 100vh;
   min-block-size: var(--min-block);
   position: relative;
-  padding-block-start: 10px;
+  padding-block-start: 7px;
 }
 
 .head-decor-text::before {
@@ -110,7 +111,6 @@
   flex-direction: column;
   gap: 55px;
   block-size: fit-content;
-  margin-block-start: 10px;
 }
 
 .title-decor {
@@ -219,7 +219,7 @@
 @media (width >= 768px) {
   .page {
     padding: 10px 20px 10px 0;
-    --gap-page: 73px;
+    --gap-page: 70px;
   }
 
   .main,
@@ -229,26 +229,21 @@
 
   .header {
     grid-template-rows: min-content 1fr 2fr;
-    padding: 0 0 20px 0;
-    gap: 88px;
+    gap: 86px;
+    block-size: 1004px;
   }
 
-  .head-title {
+  .title {
     --mobi-res: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .head-div {
     gap: 160px;
-    margin-block-end: 150px;
   }
 
   .head-text {
     align-self: flex-end;
     inline-size: 364px;
-  }
-
-  .header__theme-menu {
-    padding-block-start: 10px;
   }
 
   .decorated-zone::after {
@@ -305,8 +300,9 @@
   }
 
   .header {
-    grid-template-rows: min-content 90px 1fr;
-    padding-block-end: 0;
+    grid-template-rows: min-content min-content 1fr;
+    max-block-size: 758px;
+    gap: 140px;
   }
 
   .header__theme-menu {
@@ -325,7 +321,6 @@
 
   .head-div {
     gap: 113px;
-    margin-block-end: 135px;
   }
 
   .head-text {
