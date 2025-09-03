@@ -223,6 +223,15 @@
   border: 1px solid var(--hover-button-color-active)
 }
 
+.title-footer {
+  font-size: var(--mobi-res);
+  font-weight: var(--max-font-weight);
+  color: var(--color-title-head);
+  line-height: 83%;
+  text-shadow: 2px 2px #ff0070;
+
+}
+
 @media (width >= 768px) {
   .page {
     padding: 0 20px 10px 0;
