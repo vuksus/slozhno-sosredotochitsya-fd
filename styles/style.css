@@ -226,7 +226,7 @@
 @media (width >= 768px) {
   .page {
     padding: 0 20px 10px 0;
-    --gap-page: 70px;
+    --gap-page: 50px;
   }
 
   .main,
@@ -235,7 +235,7 @@
   }
 
   .header {
-    gap: 86px;
+    gap: 81px;
     min-block-size: 1004px;
     margin-block-start: 10px;
   }
@@ -255,6 +255,7 @@
 
   .decorated-zone::after {
     inset-inline-start: 20px;
+    inset-block-end: 30px;
   }
 
   .section-duble {
@@ -294,12 +295,14 @@
 
   .footer {
     min-block-size: 1004px;
+    margin-block-start: 20px;
+    padding-block-end: 20px;
   }
 }
 
 @media (width >= 1024px) {
   .page {
-    gap: 60px;
+    gap: 50px;
   }
 
   .header {
@@ -333,7 +336,7 @@
   }
 
   .decorated-zone::after {
-    inset-block-end: 20px;
+    inset-block-end: 25px;
   }
 
   .section-duble {
@@ -355,7 +358,6 @@
 
   .footer {
     min-block-size: 758px;
-    margin-block-start: 10px;
-    padding-block-end: 10px;
+    padding-block-end: 20px;
   }
 }
