@@ -3,6 +3,7 @@
 .page {
   display: grid;
   gap: var(--gap-page);
+  justify-content: center;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--bg-color);
   background-position: center;
@@ -10,7 +11,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #000028;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), monospace;
   font-size: var(--font-size);
   line-height: 23.4px;
   padding: 0 10px;
@@ -148,7 +149,7 @@
   display: grid;
   grid-template-rows: repeat(autofill, min-content);
   gap: 10px;
-}
+  }
 
 .title-card {
   background-color: var(--accent-color-bg);
@@ -219,12 +220,12 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--hover-button-color)
+  border: 1px solid var(--hover-button-color-active)
 }
 
 @media (width >= 768px) {
   .page {
-    padding: 10px 20px 10px 0;
+    padding: 0 20px 10px 0;
     --gap-page: 70px;
   }
 
@@ -236,6 +237,7 @@
   .header {
     gap: 86px;
     min-block-size: 1004px;
+    margin-block-start: 10px;
   }
 
   .title {
@@ -264,12 +266,8 @@
     grid-template-columns: 1fr 3fr;
   }
 
-  .section-img {
-    margin-block-start: -20px;
-  }
-
   .title-section {
-    grid-row: span 2;
+    grid-row: 1/-1;
   }
 
   .main {
@@ -306,18 +304,20 @@
 
   .header {
     grid-template-rows: min-content min-content 1fr;
-    gap: 140px;
+    gap: 139px;
     min-block-size: 758px;
   }
 
   .header__theme-menu {
     justify-content: center;
     grid-area: 1;
-    padding-inline-start: 18px;
+    padding-inline-start: 20px;
+    padding-block-start: 2px;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
+    gap: 10px;
   }
 
   .title {
@@ -325,7 +325,7 @@
   }
 
   .head-div {
-    gap: 113px;
+    gap: 110px;
   }
 
   .head-text {
@@ -334,6 +334,10 @@
 
   .decorated-zone::after {
     inset-block-end: 20px;
+  }
+
+  .section-duble {
+    gap: 10px;
   }
 
   .section-what {
@@ -350,6 +354,8 @@
   }
 
   .footer {
-    min-block-size: 768px;
+    min-block-size: 758px;
+    margin-block-start: 10px;
+    padding-block-end: 10px;
   }
 }

@@ -16,4 +16,6 @@
   --color-text: #F1B2CE;
   --pseudo-color: #FF0070;
   --page-bg-color: #000028;
+  --hover-button-color: rgba(255, 0, 112, 0.4);
+  --hover-button-color-active: #FF0070;
 }

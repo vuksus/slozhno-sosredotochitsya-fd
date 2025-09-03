@@ -13,10 +13,12 @@
   --color-title-head: #FFC2E6;
   --accent-color-bg: #FF8DCB;
   --accent-color: #353430;
+  --accent-color-text: #353430;
   --color-text: #353430;
   --hover-button-color: rgb(50 49 45 / 0.4);
   --pseudo-color: transparent;
   --page-bg-color: #fff1f7;
+  --hover-button-color-active: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,5 +31,6 @@
   --accent-color: #353430;
   --pseudo-color: transparent;
   --page-bg-color: #fff1f7;
+  --hover-button-color-active: #353430;
   }
 }
